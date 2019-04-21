@@ -1,0 +1,45 @@
+<!-- 
+/* Using .filter()
+ *
+ * Using the musicData array and .filter():
+ *   - return only album objects where the album's name is
+ *     10 characters long, 25 characters long, or anywhere in between
+ *   - store the returned data in a new `results` variable
+ *
+ * Note:
+ *   - do not delete the musicData variable
+ *   - do not alter any of the musicData content
+ */
+
+ -->
+
+ <html>
+
+ <head>
+ <script>
+        const musicData =[
+            {albumName : "Junoon", artist : "Junoon" , sales : 2000000},
+            {albumName : "Talaash", artist : "Junoon" , sales : 5000000},
+            {albumName : "Inquilaab Inquilaab", artist : "Junoon" , sales : 500000},
+            {albumName : "Azadi", artist : "Junoon" , sales : 2500000},
+            {albumName : "Parvaaz", artist : "Junoon" , sales : 750000},
+            {albumName : "Ishq", artist : "Junoon" , sales : 2000000},
+            {albumName : "Dewaar", artist : "Junoon" , sales : 10000000},
+            {albumName : "Duur", artist : "Junoon" , sales : 1500000},
+        ];
+
+        const results = musicData.filter((s)=> (s.albumName.length>=10 && s.albumName.length<=25));
+
+        document.write(results.map((s)=> s.albumName + "<br/>"));
+
+        
+        
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

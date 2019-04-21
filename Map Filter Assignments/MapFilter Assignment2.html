@@ -1,0 +1,52 @@
+<!-- 
+/* Combining .filter() and .map()
+ *
+ * Using the musicData array, .filter, and .map():
+ *   - filter the musicData array down to just the albums that have 
+ *     sold over 1,000,000 copies
+ *   - on the array returned from .filter(), call .map()
+ *   - use .map() to return a string for each item in the array in the
+ *     following format: "<artist> is a great performer"
+ *   - store the array returned form .map() in a new "popular" variable
+ *
+ * Note:
+ *   - do not delete the musicData variable
+ *   - do not alter any of the musicData content
+ */
+
+ -->
+
+ <html>
+
+ <head>
+ <script>
+        const musicData =[
+            {albumName : "Junoon", artist : "Junoon" , sales : 2000000},
+            {albumName : "Talaash", artist : "Junoon" , sales : 5000000},
+            {albumName : "Inquilaab Inquilaab", artist : "Junoon" , sales : 500000},
+            {albumName : "Azadi", artist : "Junoon" , sales : 2500000},
+            {albumName : "Parvaaz", artist : "Junoon" , sales : 750000},
+            {albumName : "Ishq", artist : "Junoon" , sales : 2000000},
+            {albumName : "Dewaar", artist : "Junoon" , sales : 1000000},
+            {albumName : "Duur", artist : "Junoon" , sales : 1500000},
+        ];
+
+        const results = musicData.filter((s)=> (s.sales>1000000));
+
+        document.write(results.map((s)=> s.albumName + "<br/>"));
+
+        const popular=results.map((s)=>`${s.artist} is a great performer`)
+
+        document.write(popular.map((s)=> s + "<br/>"));
+
+        
+        
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

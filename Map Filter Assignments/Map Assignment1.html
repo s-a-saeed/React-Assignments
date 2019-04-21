@@ -1,0 +1,43 @@
+<!-- Using .map()
+ *
+ * Using the musicData array and .map():
+ *   - return a string for each item in the array in the following format
+ *     <album-name> by <artist> sold <sales> copies
+ *   - store the returned data in a new albumSalesStrings variable
+ *
+ * Note:
+ *   - do not delete the musicData variable
+ *   - do not alter any of the musicData content
+ *   - do not format the sales number, leave it as a long string of digits
+ -->
+
+ <html>
+
+ <head>
+ <script>
+        const musicData =[
+            {albumName : "Junoon", artist : "Junoon" , sales : 2000000},
+            {albumName : "Talaash", artist : "Junoon" , sales : 5000000},
+            {albumName : "Inquilaab Inquilaab", artist : "Junoon" , sales : 500000},
+            {albumName : "Azadi", artist : "Junoon" , sales : 2500000},
+            {albumName : "Parvaaz", artist : "Junoon" , sales : 750000},
+            {albumName : "Ishq", artist : "Junoon" , sales : 2000000},
+            {albumName : "Dewaar", artist : "Junoon" , sales : 10000000},
+            {albumName : "Duur", artist : "Junoon" , sales : 1500000},
+        ];
+
+        const albumSalesStrings = musicData.map((s)=>`${s.albumName} by ${s.artist} sold ${s.sales} copies`);
+
+        document.write(albumSalesStrings.map((s)=> s + "<br/>"));
+
+        
+        
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
